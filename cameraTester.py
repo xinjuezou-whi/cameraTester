@@ -166,13 +166,13 @@ def main():
     print(args)
     print('OpenCV version: {}'.format(cv2.__version__))
 
-    if args.use_rtsp:
+    if args.useRtsp:
         cap = open_cam_rtsp(args.isJetson,
                             args.rtspUri,
                             args.imageWidth,
                             args.imageHeight,
                             args.rtspLatency)
-    elif args.use_usb:
+    elif args.useUsb:
         cap = open_cam_usb(args.isJetson,
                             args.videoDev,
                             args.imageWidth,
